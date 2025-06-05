@@ -1,5 +1,5 @@
 package addressBookSystem;
 
-public class AddressBookMain {
+public class AdressBook {
 
 }
