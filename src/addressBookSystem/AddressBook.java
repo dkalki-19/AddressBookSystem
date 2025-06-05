@@ -10,7 +10,7 @@ public class AddressBook {
 		this.contacts =  new ArrayList() ;
 	}
 	
-	public void addContacts(Contact contact) {
+	public void addContact(Contact contact) {
 		contacts.add(contact);
 		 System.out.println("Contact Added Successfully");
 	}
