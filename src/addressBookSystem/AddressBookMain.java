@@ -54,6 +54,21 @@ public class AddressBookMain {
                 System.out.println(contact);
             }
         }
+        
+        System.out.print("\nDo you want to delete a contact? (yes/no): ");
+        String deleteChoice = scanner.nextLine();
+
+        if (deleteChoice.equalsIgnoreCase("yes")) {
+            System.out.print("Enter the First Name of the contact to delete: ");
+            String nameToDelete = scanner.nextLine();
+            addressBook.deleteContact(nameToDelete);
+
+            System.out.println("Contacts after deletion:");
+            for (Contact contact : addressBook.getContacts()) {
+                System.out.println(contact);
+            }
+        }
+
 
 
 	}
