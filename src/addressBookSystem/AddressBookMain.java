@@ -40,6 +40,21 @@ public class AddressBookMain {
         for (Contact contact : addressBook.getContacts()) {
             System.out.println(contact);
         }
+        
+        System.out.print("\nDo you want to edit a contact? (yes/no): ");
+        String editChoice = scanner.nextLine();
+
+        if (editChoice.equalsIgnoreCase("yes")) {
+            System.out.print("Enter the First Name of the contact to edit: ");
+            String nameToEdit = scanner.nextLine();
+            addressBook.editContact(nameToEdit, scanner);
+
+            System.out.println("Updated Contacts in Address Book:");
+            for (Contact contact : addressBook.getContacts()) {
+                System.out.println(contact);
+            }
+        }
+
 
 	}
 }

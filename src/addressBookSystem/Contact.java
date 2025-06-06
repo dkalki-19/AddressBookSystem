@@ -38,7 +38,7 @@ public class Contact {
 		return lastname;
 	}
 	
-	public void address(String address) {
+	public void setAddress(String address) {
 		this.address = address;
 	}
 	
